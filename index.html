@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StopWatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <video loop muted id="bgVideo">
+    <source src="vid.mp4" type="video/mp4">
+  </video>
+
+  <div class="timeBox">
+    <div class="time">
+      <span class="digit" id="hr">00</span>
+      <span class="txt">:</span>
+      <span class="digit" id="min">00</span>
+      <span class="txt">:</span>
+      <span class="digit" id="sec">00</span>
+      <span class="txt">:</span>
+      <span class="digit" id="milisec">00</span>
+      <!-- <span class="txt">:</span> -->
+    </div>
+    <div class="buttonContainer">
+      <input id="startBtn" type="button" value="Start" onclick="start()" class="Btn">
+      <input type="button" id="resetBtn" value="Reset" onclick="reset()" class="Btn">
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
